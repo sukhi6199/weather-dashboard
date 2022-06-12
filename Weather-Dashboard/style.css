@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    text-align: center;
+    vertical-align: center;
+    height: 100px;
+    background: linear-gradient(90deg, blue, rgb(45, 1, 45));
+    color: white
+}
+
+header h1 {
+    padding-top: 3%;
+}
+
+.container {
+    width: 15vw;
+    padding-left: 10px;
+    padding-top: -15vh;
+}
+
+.hide {
+    display: none;
+}
+
+#forecast-title {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.results {
+    margin-left: 20vw;
+    margin-top: -10vw;
+}
+
+.card {
+    display: inline-block;
+    height: 25vh;
+    width: 15vw;
+    border: 1px black solid;
+    background-color: rgb(22, 41, 73);
+    color: white
+}
+
+.green {
+    background-color: green;
+    color: white;
+    height: 20px;
+    width: 120px;
+    border: 1px solid black;
+}
+.yellow {
+    background-color: yellow;
+    color: black;
+    height: 20px;
+    width: 120px;
+    border: 1px solid black;
+}
+.red {
+    background-color: red;
+    color: black;
+    height: 20px;
+    width: 120px;
+    border: 1px solid black;
+}
+
+.card p {
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.list {
+    list-style: none;
+    height: fit-content;
+    margin-top: 10px;
+}
+
+#aside {
+    padding-top: 2vh;
+    padding-left: 1vw;
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <script
+    type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"
+  ></script>
+
+</head>
+<body>
+    <header>
+        <h1 id="dashboard">Weather Dashboard</h1>
+    </header>
+<div class="container">
+    <div class ="search col-md-3" id="aside">
+        <div>
+            <h1 for="city" class="form-label" id="searchBox">Search for a city:</h1>
+            <br>
+            <input type="text" class="form-control" id="cityInput">
+            <br>
+            <br>
+            <button type="submit" class="btn" id="searchBtn">Search</button>
+        </div>
+        <div>
+            <ul id="history"></ul>
+
+        </div>
+     </div>
+</div>
+<div class = "results col-md-9" id="main">
+        <div class = "main-results">
+                <h1 id="city"><span><img/></span></h1>
+                <img id="mainIcon">
+                <br>
+                <p id="temperature"></p>
+                <br>
+                <p id="wind-speed"></p>
+                <br>
+                <p id="humidity"></p>
+                <br>
+                <p id="uv-index"></p>
+        </div>
+        <br>
+         <div class="hide" id="forecast">
+            <h2 id="forecast-title">5-Day Forecast:</h2>
+            <div class="card">
+                <h3 id="forecast-dates"></h3>
+                <p id="forecast-temperature"></p>
+                <p id="forecast-wind-speed"></p>
+                <p id="forecast-humidity"></p>
+            </div>
+            <div class="card">
+                <h3 id="forecast-dates1"></h3>
+                <p id="forecast-temperature1"></p>
+                <p id="forecast-wind-speed1"></p>
+                <p id="forecast-humidity1"></p>
+            </div>
+            <div class="card">
+                <h3 id="forecast-dates2"></h3>
+                <p id="forecast-temperature2"></p>
+                <p id="forecast-wind-speed2"></p>
+                <p id="forecast-humidity2"></p>
+            </div>
+            <div class="card">
+                <h3 id="forecast-dates3"></h3>
+                <p id="forecast-temperature3"></p>
+                <p id="forecast-wind-speed3"></p>
+                <p id="forecast-humidity3"></p>
+            </div>
+            <div class="card">
+                <h3 id="forecast-dates4"></h3>
+                <p id="forecast-temperature4"></p>
+                <p id="forecast-wind-speed4"></p>
+                <p id="forecast-humidity4"></p>
+            </div>
+     </div>
+</div>
+    <script type="text/javascript" src="./script.js"></script>
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+</body>
+</html>
